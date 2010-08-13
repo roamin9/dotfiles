@@ -1,0 +1,15 @@
+保存我使用的工具的配置文件，并熟悉Git的使用 ;)
+
+Global setup:
+$ git config --global user.name "roamin9"
+$ git config --global user.email "zhoo.xuan@gmail.com"
+
+Next steps:
+$ mkdir repos-dir
+$ cd repos-dir
+$ git init      初始化Git仓库
+$ touch README
+$ git add README    Git的目前所有的操作都是在本地完成的，包括添加文件，增加注释等            
+$ git commit -m 'first commit'
+$ git remote add origin git@github.com:roamin9/repos-dir.git   origin，根源。
+$ git push origin master    这次推到服务器上么？
