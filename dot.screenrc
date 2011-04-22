@@ -1,0 +1,9 @@
+# ~/.screenrc
+# use visual bell
+vbell off
+# replace ctrl-A by ctrl-A
+#escape ``
+# set a big scrolling buffer
+defscrollback 5000
+# Set the caption on the bottom line
+caption always "%{= Bw}%-w%{= kW}%n %t%{= Bw}%+w%{= BW}%? @%u%?%? [%h]%?%-= - %LD %d %LM - %c"
