@@ -1,0 +1,92 @@
+! DPI Set
+Xft.antialias:1
+!Xft.dpi:96
+Xft.hinting:1
+Xft.hintstyle:hintfull
+Xft.rgba:rgb
+
+!! urxvt color scheme: pretty girly
+! URxvt.cursorColor:  #dc74d1
+! URxvt.pointerColor: #dc74d1
+! URxvt.background:   #0e0e0e
+! URxvt.foreground:   #4ad5e1
+! URxvt.color0:       #000000
+! URxvt.color8:       #8b8f93
+! URxvt.color1:       #dc74d1
+! URxvt.color9:       #dc74d1
+! URxvt.color2:       #0eb8c7
+! URxvt.color10:      #0eb8c7
+! URxvt.color3:       #dfe37e
+! URxvt.color11:      #dfe37e
+! URxvt.color5:       #9e88f0
+! URxvt.color13:      #9e88f0
+! URxvt.color6:       #73f7ff
+! URxvt.color14:      #73f7ff
+! URxvt.color7:       #e1dddd
+! URxvt.color15:      #e1dddd
+
+
+!redefine color to use tango theme in vim
+!!Black
+!URxvt.color0:           #000000
+!URxvt.color8:           #555753
+!!!Red
+!URxvt.color1:           #CC0000
+!URxvt.color9:           #EF2929
+!!!Green
+!URxvt.color2:           #4E9A06
+!URxvt.color10:          #8AE234
+!!!Yellow
+!URxvt.color3:           #C4A000
+!URxvt.color11:          #FCE94F
+!!!Blue
+!URxvt.color4:           #3465A4
+!URxvt.color12:          #729FCF
+!!!Magenta
+!URxvt.color5:           #75507B
+!URxvt.color13:          #AD7FA8
+!!!Cyan
+!URxvt.color6:           #06989A
+!URxvt.color14:          #34E2E2
+!!!White
+!URxvt.color7:           #D3D7CF
+!URxvt.color15:          #EEEEEC
+
+! color set  && Transparency (need xcompmgr)
+URxvt.background:	rgba:0000/0000/0000/cccc
+URxvt.foreground:	white
+URxvt.depth: 32
+
+! scroll set
+URxvt.scrollstyle: plain
+URxvt.scrollBar_right: True
+!URxvt.scrollBar:	True
+URxvt.scrollBar:	False
+URxvt.scrollWithBuffer:	True
+!URxvt.scrollWithBuffer:	False
+URxvt.saveLines:	5000
+
+
+!! urxvt setting
+!URxvt.geometry:		60x18
+URxvt.geometry:		80x28+40+40
+!URxvt.title:		"Roamin9's urxvt"
+
+!! italicFont and boldItalicFont undefined
+!!URxvt.font:		xft:wenquanyi bitmap song:medium:pixelsize=15:antialias=False
+!!URxvt.font:		xft:Monaco:medium:pixelsize=20:antialias=True, \
+URxvt.font:         xft:WenQuanYi Zen Hei Mono:medium:pixelsize=20:antialias=True 
+! URxvt.boldFont:		xft:Monaco:bold:pixelsize=15:antialias=True, \
+!			xft:WenQuanYi Zen Hei Mono:medium:pixelsize=15:antialias=True
+
+! Input Method set
+URxvt.inputMethod:	xim
+URxvt.imFont:		WenQuanYi Zen Hei Sharp:style=Bold
+!URxvt.imFont:		Monaco:style=Regular
+!URxvt.preeditType:	OverTheSpot
+URxvt.preeditType:	Root
+URxvt.thickness:	0
+
+! perl script set
+! URxvt.urlLauncher:	firefox
+! URxvt.matcher.button:	1
