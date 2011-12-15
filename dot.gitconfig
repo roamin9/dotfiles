@@ -1,0 +1,6 @@
+[user]
+	name = roamin9
+	email = zhoo.xuan@gmail.com
+[alias]
+	last = log -1 HEAD
+    unstage = reset HEAD --
