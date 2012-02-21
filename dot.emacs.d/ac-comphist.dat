@@ -1,0 +1,26 @@
+((("auto-insert" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("news_modular" .
+   [0 0 0 1 1 0 0 0 0 0 0 0])
+  ("alt" .
+   [1 0 0])
+  ("windmove-default-keybindings" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("function" .
+   [0 0 0 0 0 0 0 1])
+  ("set" .
+   [1 0 0])
+  ("setup-default-fontset" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("add-to-list" .
+   [2 0 0 0 0 0 0 0 0 0 0])
+  ("load-path" .
+   [1 0 0 0 0 0 0 0 0])
+  ("setq" .
+   [1 0 0 0])
+  ("require" .
+   [1 0 0 0 0 0 0])
+  ("auto-mode-alist" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("python-mode" .
+   [1 0 0 0 0 0 0 0 0 0 0])))

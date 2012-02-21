@@ -4,6 +4,8 @@
 ;;(add-to-list 'load-path "~/.emacs.d")
 (let ((default-directory "~/.emacs.d/")) 
      (normal-top-level-add-subdirs-to-load-path) )
+
+(global-set-key (kbd "M-RET") 'ns-toggle-fullscreen)
 ;如果有其它配置文件，使此命令读取
 ;(load "addon.el")
 	  
@@ -23,9 +25,16 @@
 ;;禁用启动画面
 (setq inhibit-startup-message t)
 
+;;lines soft wrapped
+(global-visual-line-mode 1)
+
 ;;========================================
 ;; 键绑定
 ;;========================================
+
+;; M-[up|down|left|right] 切换窗口
+(windmove-default-keybindings 'alt)
+
 
 ;; C-t 设置标记 ;; 
 (global-set-key (kbd "C-t") 'set-mark-command)
@@ -415,3 +424,29 @@ A numeric argument serves as a repeat count."
   (setq last-buffer-undo-list buffer-undo-list))
 
 (put 'upcase-region 'disabled nil)
+
+;; use python-mode.el, python env setup
+(add-to-list 'load-path "~/.emacs.d/python-mode/")
+(setq py-install-directory "~/.emacs.d/python-mode/")
+(require 'python-mode)
+(add-to-list 'auto-mode-alist '("\\.py\\'" . python-mode))
+(global-set-key "\r" 'align-newline-and-indent)
+
+;; ipython plugin. Because of ipython.el out of date for python-mode, so comment
+;; used new ipython.el from github ipython/docs/emacs/
+(add-to-list 'load-path "~/.emacs.d/plugins/")
+(require 'ipython)
+
+;; yasnippet plugin
+(add-to-list 'load-path "~/.emacs.d/plugins/")
+(require 'yasnippet-bundle)
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/my-snippets")
+
+;; auto-insert plugin
+(setq auto-insert t)
+(setq auto-insert-query t)
+(add-hook 'find-file-hooks 'auto-insert)
+(setq auto-insert-directory "~/.emacs.d/auto-insert/")
+(define-auto-insert "\.py" "my-python-template.py")
+(define-auto-insert "\.sh" "my-sh-template.sh")
